@@ -23,7 +23,7 @@ apis:
   tags: Servers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/servers/master/_listings/azure-sql-database/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-sql-servers-servername-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/servers/master/_listings/azure-sql-database/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-sql-servers-servername-get.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/sql-database/
