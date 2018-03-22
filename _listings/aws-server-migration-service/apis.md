@@ -12,9 +12,9 @@ tags:
 - Migration
 - Database
 - Amazon Web Services
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/servers/master/_listings/aws-server-migration-service/apis.yaml
+created: "2018-03-22"
+modified: "2018-03-22"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/aws-server-migration-service/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: AWS Server Migration Service API
@@ -27,7 +27,7 @@ apis:
   tags: Servers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/servers/master/_listings/aws-server-migration-service/action-getservers-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/aws-server-migration-service/action-getservers-get.md
 x-common:
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/server-migration-service/latest/userguide/cli_workflow.html
