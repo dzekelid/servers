@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetServers&k=1:
+  /?Action=GetServers:
     get:
       summary: ' Get Servers '
       description: The get-servers API returns a list of all servers in your server
