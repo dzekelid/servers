@@ -17,9 +17,9 @@ tags:
 - Deployment
 - Containers
 - Amazon Web Services
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/servers/master/_listings/aws-elastic-beanstalk/apis.yaml
+created: "2018-03-22"
+modified: "2018-03-22"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/aws-elastic-beanstalk/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: AWS Elastic Beanstalk API
@@ -31,7 +31,7 @@ apis:
   tags: Servers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/servers/master/_listings/aws-elastic-beanstalk/action-restartappserver-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/aws-elastic-beanstalk/action-restartappserver-get.md
 x-common:
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/AWS-Elastic-Beanstalk
