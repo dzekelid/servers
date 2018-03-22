@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=RestartAppServer&k=1:
+  /?Action=RestartAppServer:
     get:
       summary: ' Restart App Server '
       description: |-
