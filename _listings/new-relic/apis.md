@@ -11,9 +11,9 @@ tags:
 - Stack Network
 - Performance
 - Monitoring
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/servers/master/_listings/new-relic/apis.yaml
+created: "2018-03-22"
+modified: "2018-03-22"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/new-relic/apis.yaml
 specificationVersion: "0.14"
 apis: []
 x-common:
