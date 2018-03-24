@@ -10,8 +10,8 @@ tags:
 - Stack Network
 - Microsoft
 - Database
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-sql-database/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -23,7 +23,7 @@ apis:
   tags: Servers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-sql-database/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-sql-servers-servername-serviceobjectives-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-sql-database/subscriptions-subscriptionid-providers-microsoft-sql-servers-get.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/sql-database/
