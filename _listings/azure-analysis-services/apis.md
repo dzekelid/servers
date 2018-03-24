@@ -28,7 +28,7 @@ apis:
   tags: Servers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-analysisservices-servers-servername-resume-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-analysisservices-servers-get.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/analysis-services/
