@@ -28,7 +28,30 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/aws-server-migration-service/action-getservers-get.md
+- name: AWS Server Migration Service API Get Servers
+  description: The get-servers API returns a list of all servers in your server catalog.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2_AMI.png
+  humanURL: https://aws.amazon.com/server-migration-service/
+  baseURL: http:://{host}//
+  tags: Servers
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/aws-server-migration-service/action-getservers-get.md
 x-common:
+- type: x-command-line-interface
+  url: http://docs.aws.amazon.com/server-migration-service/latest/userguide/cli_workflow.html
+- type: x-documentation
+  url: http://docs.aws.amazon.com/ServerMigration/latest/APIReference/Welcome.html
+- type: x-faq
+  url: https://aws.amazon.com/server-migration-service/faqs/
+- type: x-getting-started
+  url: https://aws.amazon.com/server-migration-service/getting-started/
+- type: x-partners
+  url: https://aws.amazon.com/server-migration-service/partners/
+- type: x-pricing
+  url: https://aws.amazon.com/server-migration-service/pricing/
+- type: x-website
+  url: https://aws.amazon.com/server-migration-service/
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/server-migration-service/latest/userguide/cli_workflow.html
 - type: x-documentation
