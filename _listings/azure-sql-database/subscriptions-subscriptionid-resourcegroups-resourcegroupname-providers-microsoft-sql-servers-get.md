@@ -1,10 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Azure SQL Database
-  description: Provides create, read, update and delete functionality for Azure SQL
-    Database resources including servers, databases, elastic pools, recommendations,
-    operations, and usage metrics.
+  title: Azure SQL Database API Servers List By Resource Group
+  description: Returns a list of servers in a resource group.
   version: 1.0.0
 host: management.azure.com
 basePath: /
