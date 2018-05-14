@@ -29,17 +29,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-providers-microsoft-analysisservices-servers-get.md
-- name: Azure Analysis Services API Delete Servers
-  description: Deletes the specified Analysis Services server.
+- name: Azure Analysis Services API Update Server
+  description: Updates the current state of the specified Analysis Services server.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/transform-complex-data.png
   humanURL: https://azure.microsoft.com/en-us/services/analysis-services/
   baseURL: http:://management.azure.com//
   tags: Servers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-analysisservices-servers-servername-delete.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-analysisservices-servers-servername-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-analysisservices-servers-servername-patch.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/analysis-services/
