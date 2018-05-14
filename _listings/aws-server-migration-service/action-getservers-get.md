@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Server Migration Service API
+  title: AWS Server Migration Service API Get Servers
   version: 1.0.0
+  description: The get-servers API returns a list of all servers in your server catalog.
 schemes:
 - http
 produces:
