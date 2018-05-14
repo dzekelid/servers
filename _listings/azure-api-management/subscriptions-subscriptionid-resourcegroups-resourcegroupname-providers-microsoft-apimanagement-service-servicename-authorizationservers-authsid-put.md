@@ -1,10 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: ApiManagementClient
-  description: Use these REST APIs for performing operations on User entity in Azure
-    API Management deployment. The User entity in API Management represents the developers
-    that call the APIs of the products to which they are subscribed.
+  title: Azure API Management API AuthorizationServers CreateOrUpdate
+  description: Creates new authorization server or updates an existing authorization
+    server.
   version: 1.0.0
 host: management.azure.com
 basePath: /
