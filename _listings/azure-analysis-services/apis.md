@@ -29,17 +29,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-providers-microsoft-analysisservices-servers-get.md
-- name: Azure Analysis Services API List Servers By Group
-  description: Gets all the Analysis Services servers for the given resource group.
+- name: Azure Analysis Services API List Servers
+  description: Lists all the Analysis Services servers for the given subscription.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/transform-complex-data.png
   humanURL: https://azure.microsoft.com/en-us/services/analysis-services/
   baseURL: http:://management.azure.com//
   tags: Servers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-analysisservices-servers-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-providers-microsoft-analysisservices-servers-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-analysisservices-servers-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/azure-analysis-services/subscriptions-subscriptionid-providers-microsoft-analysisservices-servers-get-postman.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/analysis-services/
