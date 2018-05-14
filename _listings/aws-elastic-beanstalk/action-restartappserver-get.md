@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Elastic Beanstalk API
+  title: AWS Elastic Beanstalk API Restart App Server
   version: 1.0.0
+  description: |-
+    Causes the environment to restart the application container server running on each
+          Amazon EC2 instance.
 schemes:
 - http
 produces:
