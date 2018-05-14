@@ -1,9 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: AzureAnalysisServices
-  description: The Azure Analysis Services Web API provides a RESTful set of web services
-    that enables users to create, retrieve, update, and delete Analysis Services servers
+  title: Azure Analysis Services API List Servers By Group
+  description: Gets all the Analysis Services servers for the given resource group.
   version: "2016-05-16"
 host: management.azure.com
 basePath: /
