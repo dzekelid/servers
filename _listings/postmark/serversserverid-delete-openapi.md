@@ -15,6 +15,86 @@ produces:
 consumes:
 - application/json
 paths:
+  /server:
+    parameters:
+      summary: Parameters Server
+      description: Parameters server.
+      operationId: parametersServer
+      x-api-path-slug: server-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Server
+    get:
+      summary: Get Server
+      description: Gets the server details and figures out your unique InboundHash
+        where you can forward your email. This can be found in the web app in your
+        server's Credentials tab or via the API.
+      operationId: getServer
+      x-api-path-slug: server-get
+      parameters:
+      - in: query
+        name: Accept
+        description: The accepted type for the response
+      - in: query
+        name: Content-Type
+        description: The content type of the request
+      - in: header
+        name: X-Postmark-Server-Token
+        description: The token associated with the Server on which this request will
+          operate
+      responses:
+        200:
+          description: OK
+      tags:
+      - Server
+    post:
+      summary: Post Server
+      description: Sets the URL where we should send JSON data. In order for your
+        application receive the emails that we parse, you will need to tell Postmark
+        where to send the JSON data for each inbound email it processes, which is
+        done via an HTTP POST to a URL of your choice. You can set this URL in the
+        Settings page for your Postmark server in the web app, or using the InboundHookUrl
+        field in the API. It also lets you choose a domain that you would like to
+        listen on for incoming email to be processed by Postmark. We recommend a separate
+        subdomain, like inbound.yourdomain.com. Each server can listen to one unique
+        domain, so make sure to set the X-Postmark-Server-Token to the correct server
+        token in the API call below.
+      operationId: postServer
+      x-api-path-slug: server-post
+      parameters:
+      - in: query
+        name: Accept
+        description: The accepted type for the response
+      - in: query
+        name: Content-Type
+        description: The content type of the request
+      responses:
+        200:
+          description: OK
+      tags:
+      - Server
+    put:
+      summary: Put Server
+      description: Put server.
+      operationId: putServer
+      x-api-path-slug: server-put
+      parameters:
+      - in: body
+        name: body
+        description: The settings that should be modified for the current server
+        schema:
+          $ref: '#/definitions/holder'
+      - in: header
+        name: X-Postmark-Server-Token
+        description: The token associated with the Server on which this request will
+          operate
+      responses:
+        200:
+          description: OK
+      tags:
+      - Server
   /servers:
     get:
       summary: List servers
@@ -69,6 +149,48 @@ paths:
       - in: path
         name: serverid
         description: The ID of the Server that should be deleted
+      - in: header
+        name: X-Postmark-Account-Token
+        description: The token associated with the Account on which this request will
+          operate
+      responses:
+        200:
+          description: OK
+      tags:
+      - Servers
+      - Serverid
+    get:
+      summary: Get a Server
+      description: Get a server.
+      operationId: getServerInformation
+      x-api-path-slug: serversserverid-get
+      parameters:
+      - in: path
+        name: serverid
+        description: The ID of the Server to get
+      - in: header
+        name: X-Postmark-Account-Token
+        description: The token associated with the Account on which this request will
+          operate
+      responses:
+        200:
+          description: OK
+      tags:
+      - Servers
+      - Serverid
+    put:
+      summary: Edit a Server
+      description: Edit a server.
+      operationId: editServerInformation
+      x-api-path-slug: serversserverid-put
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: serverid
+        description: The ID of the Server to update
       - in: header
         name: X-Postmark-Account-Token
         description: The token associated with the Account on which this request will

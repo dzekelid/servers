@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Azure SQL Database
 x-complete: 1
@@ -88,20 +87,6 @@ paths:
           description: OK
       tags:
       - Servers Resource Group
-  /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/usages:
-    get:
-      summary: Servers List Usages
-      description: Returns server usages.
-      operationId: Servers_ListUsages
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-sqlserversservernameusages-get
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Servers Usages
   ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/serviceObjectives/{serviceObjectiveName}
   : get:
       summary: Servers Get Service Objective
@@ -133,4 +118,17 @@ paths:
           description: OK
       tags:
       - Servers Service Objectives
----
+  /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/usages:
+    get:
+      summary: Servers List Usages
+      description: Returns server usages.
+      operationId: Servers_ListUsages
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-sqlserversservernameusages-get
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Servers Usages

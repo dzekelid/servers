@@ -88,6 +88,37 @@ paths:
           description: OK
       tags:
       - Servers Resource Group
+  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/serviceObjectives/{serviceObjectiveName}
+  : get:
+      summary: Servers Get Service Objective
+      description: Gets a database service objective.
+      operationId: Servers_GetServiceObjective
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-sqlserversservernameserviceobjectivesserviceobjectivename-get
+      parameters:
+      - in: query
+        name: No Name
+      - in: path
+        name: serviceObjectiveName
+        description: The name of the service objective to retrieve
+      responses:
+        200:
+          description: OK
+      tags:
+      - Servers Service Objective
+  ? /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/serviceObjectives
+  : get:
+      summary: Servers List Service Objectives
+      description: Returns database service objectives.
+      operationId: Servers_ListServiceObjectives
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-sqlserversservernameserviceobjectives-get
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Servers Service Objectives
   /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/usages:
     get:
       summary: Servers List Usages

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: New Relic
 x-complete: 1
@@ -13,57 +12,14 @@ produces:
 consumes:
 - application/json
 paths:
-  /servers.{format}:
-    get:
-      summary: Get Servers. Format
-      description: |-
-        This API endpoint returns a paginated
-        list of the Servers associated with your New Relic account. The time range for summary data is the last 10 minutes.
-
-        Servers can be filtered by their name, hostname, or the list of server IDs.
-
-        See our documentation for a discussion and examples of
-        using filters
-        and summary data output.
-      operationId: getServers.Format
-      x-api-path-slug: servers-format-get
-      parameters:
-      - in: query
-        name: filter[host]
-        description: Filter by host
-        type: string
-      - in: query
-        name: filter[ids]
-        description: Filter by server IDs
-        type: list
-      - in: query
-        name: filter[labels]
-        description: Filter by server labels (beta)
-        type: string
-      - in: query
-        name: filter[name]
-        description: Filter by name
-        type: string
-      - in: query
-        name: filter[reported]
-        description: Filter by reported in last 10 hours
-        type: boolean
-      - in: query
-        name: page
-        description: Pagination index
-        type: integer
-      responses:
-        200:
-          description: OK
-      tags:
-      - Servers.
-      - Format
   /servers/{id}.{format}:
     get:
       summary: Get Servers  . Format
-      description: "This API endpoint returns a single Server, identified by ID. The
-        time range for summary data is the last 10 minutes.\u201D\n\nSee our documentation
-        for a discussion on\nsummary data output."
+      description: |-
+        This API endpoint returns a single Server, identified by ID. The time range for summary data is the last 10 minutes.???
+
+        See our documentation for a discussion on
+        summary data output.
       operationId: getServers.Format
       x-api-path-slug: serversid-format-get
       parameters:
@@ -221,4 +177,214 @@ paths:
       - Metrics
       - Data.
       - Format
----
+  /servers.{format}:
+    get:
+      summary: Get Servers. Format
+      description: |-
+        This API endpoint returns a paginated
+        list of the Servers associated with your New Relic account. The time range for summary data is the last 10 minutes.
+
+        Servers can be filtered by their name, hostname, or the list of server IDs.
+
+        See our documentation for a discussion and examples of
+        using filters
+        and summary data output.
+      operationId: getServers.Format
+      x-api-path-slug: servers-format-get
+      parameters:
+      - in: query
+        name: filter[host]
+        description: Filter by host
+        type: string
+      - in: query
+        name: filter[ids]
+        description: Filter by server IDs
+        type: list
+      - in: query
+        name: filter[labels]
+        description: Filter by server labels (beta)
+        type: string
+      - in: query
+        name: filter[name]
+        description: Filter by name
+        type: string
+      - in: query
+        name: filter[reported]
+        description: Filter by reported in last 10 hours
+        type: boolean
+      - in: query
+        name: page
+        description: Pagination index
+        type: integer
+      responses:
+        200:
+          description: OK
+      tags:
+      - Servers.
+      - Format
+  /alerts_entity_conditions/{entity_id}.{format}:
+    get:
+      summary: Get Alerts Entity Conditions Entity  . Format
+      description: |-
+        This API endpoint allows you to list the Alerts conditions an entity is part of.
+
+        Entity type options (Synthetics is not yet supported):
+
+        BrowserApplication
+
+        Application
+
+        MobileApplication
+
+        Server
+
+        KeyTransaction
+
+        Plugin
+      operationId: getAlertsEntityConditionsEntity.Format
+      x-api-path-slug: alerts-entity-conditionsentity-id-format-get
+      parameters:
+      - in: path
+        name: entity_id
+        description: Entity ID
+        type: integer
+      - in: query
+        name: entity_type
+        description: Entity Type
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Alerts
+      - Entity
+      - Conditions
+      - Entity
+      - ""
+      - .
+      - Format
+    put:
+      summary: Put Alerts Entity Conditions Entity  . Format
+      description: "This API endpoint allows you to add an entity to a specified Alerts
+        condition.\n\nNote: Admin User???s API Key is required.\n \n  Entity type
+        options (Synthetics is not yet supported):\n\nBrowserApplication\n\nApplication\n\nMobileApplication\n\nServer\n\nKeyTransaction\n\nPlugin"
+      operationId: putAlertsEntityConditionsEntity.Format
+      x-api-path-slug: alerts-entity-conditionsentity-id-format-put
+      parameters:
+      - in: query
+        name: condition_id
+        description: Alerts condition ID
+        type: integer
+      - in: path
+        name: entity_id
+        description: Entity id to add
+        type: integer
+      - in: query
+        name: entity_type
+        description: Entity Type
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Alerts
+      - Entity
+      - Conditions
+      - Entity
+      - ""
+      - .
+      - Format
+    delete:
+      summary: Delete Alerts Entity Conditions Entity  . Format
+      description: |-
+        This API endpoint allows you to disassociate an entity with a specified Alerts condition.
+
+        Note: Admin User???s API Key is required.
+
+        Entity type options (Synthetics is not yet supported):
+
+        BrowserApplication
+
+        Application
+
+        MobileApplication
+
+        Server
+
+        KeyTransaction
+
+        Plugin
+      operationId: deleteAlertsEntityConditionsEntity.Format
+      x-api-path-slug: alerts-entity-conditionsentity-id-format-delete
+      parameters:
+      - in: query
+        name: condition_id
+        description: Alerts condition ID
+        type: integer
+      - in: path
+        name: entity_id
+        description: Entity id to remove
+        type: integer
+      - in: query
+        name: entity_type
+        description: Entity Type
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Alerts
+      - Entity
+      - Conditions
+      - Entity
+      - ""
+      - .
+      - Format
+  /alerts_events.{format}:
+    get:
+      summary: Get Alerts Events. Format
+      description: "This API endpoint allows you to list the alert events for your
+        account.\n\nAlerts events can be filter by product, target type, group ID,
+        instance ID, and event type.\n\nThe options for products are: APM, BROWSER,
+        MOBILE, SERVERS, PLUGINS, SYNTHETICS, and ALERTS.\n\nThe options for entity
+        type are: Application, Server, KeyTransaction, Plugin, MobileApplication,
+        BrowserApplication, and Monitor.\n\nThe options for event type are: NOTIFICATION,
+        DEPLOYMENT, VIOLATION_OPEN, VIOLATION_CLOSE, VIOLATION, and INSTRUMENTATION.\n\nThe
+        group ID option is normally the same as the entity ID (e.g. an Application
+        group ID and entity ID will be the same), however PLUGINS have a group ID
+        representing the PLUGIN itself, and entity IDs for all instances of that PLUGIN
+        type.\n\nSee our documentation for a discussion on \noutput pagination."
+      operationId: getAlertsEvents.Format
+      x-api-path-slug: alerts-events-format-get
+      parameters:
+      - in: query
+        name: filter[entity_group_id]
+        description: Filter by entity group ID
+        type: integer
+      - in: query
+        name: filter[entity_id]
+        description: Filter by entity ID
+        type: integer
+      - in: query
+        name: filter[entity_type]
+        description: Filter by entity type
+        type: string
+      - in: query
+        name: filter[event_type]
+        description: Filter by event type
+        type: string
+      - in: query
+        name: filter[product]
+        description: Filter by New Relic product
+        type: string
+      - in: query
+        name: page
+        description: Pagination index
+        type: integer
+      responses:
+        200:
+          description: OK
+      tags:
+      - Alerts
+      - Events.
+      - Format

@@ -18,57 +18,14 @@ produces:
 consumes:
 - application/json
 paths:
-  /servers.{format}:
-    get:
-      summary: Get Servers. Format
-      description: |-
-        This API endpoint returns a paginated
-        list of the Servers associated with your New Relic account. The time range for summary data is the last 10 minutes.
-
-        Servers can be filtered by their name, hostname, or the list of server IDs.
-
-        See our documentation for a discussion and examples of
-        using filters
-        and summary data output.
-      operationId: getServers.Format
-      x-api-path-slug: servers-format-get
-      parameters:
-      - in: query
-        name: filter[host]
-        description: Filter by host
-        type: string
-      - in: query
-        name: filter[ids]
-        description: Filter by server IDs
-        type: list
-      - in: query
-        name: filter[labels]
-        description: Filter by server labels (beta)
-        type: string
-      - in: query
-        name: filter[name]
-        description: Filter by name
-        type: string
-      - in: query
-        name: filter[reported]
-        description: Filter by reported in last 10 hours
-        type: boolean
-      - in: query
-        name: page
-        description: Pagination index
-        type: integer
-      responses:
-        200:
-          description: OK
-      tags:
-      - Servers.
-      - Format
   /servers/{id}.{format}:
     get:
       summary: Get Servers  . Format
-      description: "This API endpoint returns a single Server, identified by ID. The
-        time range for summary data is the last 10 minutes.\u201D\n\nSee our documentation
-        for a discussion on\nsummary data output."
+      description: |-
+        This API endpoint returns a single Server, identified by ID. The time range for summary data is the last 10 minutes.???
+
+        See our documentation for a discussion on
+        summary data output.
       operationId: getServers.Format
       x-api-path-slug: serversid-format-get
       parameters:

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Apigee
 x-complete: 1
@@ -76,4 +75,3 @@ paths:
       - Environments
       - Env
       - Servers
----

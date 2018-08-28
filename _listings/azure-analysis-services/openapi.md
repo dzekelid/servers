@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Azure Analysis Services
 x-complete: 1
@@ -155,4 +154,3 @@ paths:
           description: OK
       tags:
       - Servers
----

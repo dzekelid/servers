@@ -8,76 +8,334 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postma
 x-kinRank: "8"
 x-alexaRank: "87545"
 tags: Servers
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Postmark Account List servers
-  x-api-slug: postmark-account
+- name: Postmark - Parameters Server
+  x-api-slug: server-parameters
+  description: Parameters server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-parameters-openapi.md
+- name: Postmark - Get Server
+  x-api-slug: server-get
+  description: Gets the server details and figures out your unique InboundHash where
+    you can forward your email. This can be found in the web app in your server's
+    Credentials tab or via the API.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-get-openapi.md
+- name: Postmark - Post Server
+  x-api-slug: server-post
+  description: Sets the URL where we should send JSON data. In order for your application
+    receive the emails that we parse, you will need to tell Postmark where to send
+    the JSON data for each inbound email it processes, which is done via an HTTP POST
+    to a URL of your choice. You can set this URL in the Settings page for your Postmark
+    server in the web app, or using the InboundHookUrl field in the API. It also lets
+    you choose a domain that you would like to listen on for incoming email to be
+    processed by Postmark. We recommend a separate subdomain, like inbound.yourdomain.com.
+    Each server can listen to one unique domain, so make sure to set the X-Postmark-Server-Token
+    to the correct server token in the API call below.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-post-openapi.md
+- name: Postmark - Put Server
+  x-api-slug: server-put
+  description: Put server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-put-openapi.md
+- name: Postmark - Parameters Server
+  x-api-slug: server-parameters
+  description: Parameters server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-parameters-openapi.md
+- name: Postmark - Get Server
+  x-api-slug: server-get
+  description: Gets the server details and figures out your unique InboundHash where
+    you can forward your email. This can be found in the web app in your server's
+    Credentials tab or via the API.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-get-openapi.md
+- name: Postmark - Post Server
+  x-api-slug: server-post
+  description: Sets the URL where we should send JSON data. In order for your application
+    receive the emails that we parse, you will need to tell Postmark where to send
+    the JSON data for each inbound email it processes, which is done via an HTTP POST
+    to a URL of your choice. You can set this URL in the Settings page for your Postmark
+    server in the web app, or using the InboundHookUrl field in the API. It also lets
+    you choose a domain that you would like to listen on for incoming email to be
+    processed by Postmark. We recommend a separate subdomain, like inbound.yourdomain.com.
+    Each server can listen to one unique domain, so make sure to set the X-Postmark-Server-Token
+    to the correct server token in the API call below.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-post-openapi.md
+- name: Postmark - Put Server
+  x-api-slug: server-put
+  description: Put server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-put-openapi.md
+- name: Postmark - Put Server
+  x-api-slug: server-put
+  description: Put server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-put-openapi.md
+- name: Postmark - Post Server
+  x-api-slug: server-post
+  description: Sets the URL where we should send JSON data. In order for your application
+    receive the emails that we parse, you will need to tell Postmark where to send
+    the JSON data for each inbound email it processes, which is done via an HTTP POST
+    to a URL of your choice. You can set this URL in the Settings page for your Postmark
+    server in the web app, or using the InboundHookUrl field in the API. It also lets
+    you choose a domain that you would like to listen on for incoming email to be
+    processed by Postmark. We recommend a separate subdomain, like inbound.yourdomain.com.
+    Each server can listen to one unique domain, so make sure to set the X-Postmark-Server-Token
+    to the correct server token in the API call below.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-post-openapi.md
+- name: Postmark - Get Server
+  x-api-slug: server-get
+  description: Gets the server details and figures out your unique InboundHash where
+    you can forward your email. This can be found in the web app in your server's
+    Credentials tab or via the API.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-get-openapi.md
+- name: Postmark - Parameters Server
+  x-api-slug: server-parameters
+  description: Parameters server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://spamcheck.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/server-parameters-openapi.md
+- name: Postmark Account-level - List servers
+  x-api-slug: servers-get
   description: List servers.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
   humanURL: http://postmarkapp.com
-  baseURL: https://api.postmarkapp.com////servers
-  tags: Servers
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/servers-get-openapi.md
-- name: Postmark Account Create a Server
-  x-api-slug: postmark-account
+- name: Postmark Account-level - Create a Server
+  x-api-slug: servers-post
   description: Create a server.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
   humanURL: http://postmarkapp.com
-  baseURL: https://api.postmarkapp.com////servers
-  tags: Servers
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/servers-post-openapi.md
-- name: Postmark Account Delete a Server
-  x-api-slug: postmark-account
+- name: Postmark Account-level - Delete a Server
+  x-api-slug: serversserverid-delete
   description: Delete a server.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
   humanURL: http://postmarkapp.com
-  baseURL: https://api.postmarkapp.com////servers/{serverid}
-  tags: Servers,Serverid
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-delete-openapi.md
-- name: Postmark Account Get a Server
-  x-api-slug: postmark-account
+- name: Postmark Account-level - Get a Server
+  x-api-slug: serversserverid-get
   description: Get a server.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
   humanURL: http://postmarkapp.com
-  baseURL: https://api.postmarkapp.com////servers/{serverid}
-  tags: Servers,Serverid
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-get-openapi.md
-- name: Postmark Account Edit a Server
-  x-api-slug: postmark-account
+- name: Postmark Account-level - Edit a Server
+  x-api-slug: serversserverid-put
   description: Edit a server.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
   humanURL: http://postmarkapp.com
-  baseURL: https://api.postmarkapp.com////servers/{serverid}
-  tags: Servers,Serverid
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-put-openapi.md
-- name: Postmark Account
-  x-api-slug: postmark-account
-  description: Trusted by thousands of developers, Postmark is a fast and reliable
-    transactional email service. Send with Postmark to ensure your transactional emails
-    get to the inbox on time, every time.
+- name: Postmark Account-level - Delete a Server
+  x-api-slug: serversserverid-delete
+  description: Delete a server.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
   humanURL: http://postmarkapp.com
   baseURL: https://api.postmarkapp.com//
-  tags: Servers
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-delete-openapi.md
+- name: Postmark Account-level - Get a Server
+  x-api-slug: serversserverid-get
+  description: Get a server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-get-openapi.md
+- name: Postmark Account-level - Edit a Server
+  x-api-slug: serversserverid-put
+  description: Edit a server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-put-openapi.md
+- name: Postmark Account-level - Delete a Server
+  x-api-slug: serversserverid-delete
+  description: Delete a server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-delete-openapi.md
+- name: Postmark Account-level - Get a Server
+  x-api-slug: serversserverid-get
+  description: Get a server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-get-openapi.md
+- name: Postmark Account-level - Edit a Server
+  x-api-slug: serversserverid-put
+  description: Edit a server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-put-openapi.md
+- name: Postmark Account-level - Edit a Server
+  x-api-slug: serversserverid-put
+  description: Edit a server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-put-openapi.md
+- name: Postmark Account-level - Get a Server
+  x-api-slug: serversserverid-get
+  description: Get a server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-get-openapi.md
+- name: Postmark Account-level - Delete a Server
+  x-api-slug: serversserverid-delete
+  description: Delete a server.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/638-postmark.jpg
+  humanURL: http://postmarkapp.com
+  baseURL: https://api.postmarkapp.com//
+  tags: Target, Imports, Stack Network, Technology, SaaS, Emails, Messages, Relative
+    Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/servers/master/_listings/postmark/serversserverid-delete-openapi.md
 x-common:
 - type: x--net-library
   url: http://developer.postmarkapp.com/developer-official-libs.html#dot-net
+- type: x-api-gallery
+  url: http://polygon.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://postmark.stack.network
 - type: x-base
   url: https://api.postmarkapp.com
 - type: x-blog
